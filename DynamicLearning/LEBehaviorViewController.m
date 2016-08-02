@@ -177,6 +177,8 @@
 - (IBAction)pushBehavior:(id)sender
 {
     UIPushBehavior *push = [[UIPushBehavior alloc]initWithItems:@[self.boxView1, self.boxView2] mode:UIPushBehaviorModeInstantaneous];
+    push.magnitude = 2.0f;
+    push.angle = M_PI;
     push.pushDirection = CGVectorMake(0, 1);
     
     [self.dynamicAnimator addBehavior:push];

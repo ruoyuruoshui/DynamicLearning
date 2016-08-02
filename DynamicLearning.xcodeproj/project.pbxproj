@@ -20,6 +20,7 @@
 		40A678AA1D2A55F4002568EC /* LETearOffBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A678A91D2A55F4002568EC /* LETearOffBehavior.m */; };
 		40A678AD1D2A5C71002568EC /* LETearOffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A678AC1D2A5C71002568EC /* LETearOffViewController.m */; };
 		40A678B01D2A6481002568EC /* LEDefaultBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A678AF1D2A6481002568EC /* LEDefaultBehavior.m */; };
+		40DD04471D5074EC0016A818 /* LELockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DD04461D5074EC0016A818 /* LELockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		40A678AC1D2A5C71002568EC /* LETearOffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LETearOffViewController.m; sourceTree = "<group>"; };
 		40A678AE1D2A6481002568EC /* LEDefaultBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDefaultBehavior.h; sourceTree = "<group>"; };
 		40A678AF1D2A6481002568EC /* LEDefaultBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDefaultBehavior.m; sourceTree = "<group>"; };
+		40DD04451D5074EC0016A818 /* LELockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LELockViewController.h; sourceTree = "<group>"; };
+		40DD04461D5074EC0016A818 /* LELockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LELockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				40A678A11D2A4883002568EC /* LEDragViewController.m */,
 				40A678AB1D2A5C71002568EC /* LETearOffViewController.h */,
 				40A678AC1D2A5C71002568EC /* LETearOffViewController.m */,
+				40DD04451D5074EC0016A818 /* LELockViewController.h */,
+				40DD04461D5074EC0016A818 /* LELockViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				40A6789F1D2A4874002568EC /* LEBehaviorViewController.m in Sources */,
 				40A678A61D2A4A48002568EC /* LEDraggableView.m in Sources */,
 				40A678AD1D2A5C71002568EC /* LETearOffViewController.m in Sources */,
+				40DD04471D5074EC0016A818 /* LELockViewController.m in Sources */,
 				40A678AA1D2A55F4002568EC /* LETearOffBehavior.m in Sources */,
 				40A6786E1D2A4772002568EC /* AppDelegate.m in Sources */,
 				40A6786B1D2A4772002568EC /* main.m in Sources */,
@@ -556,6 +562,7 @@
 				40A678951D2A4772002568EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40A678961D2A4772002568EC /* Build configuration list for PBXNativeTarget "DynamicLearningTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +571,7 @@
 				40A678981D2A4772002568EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40A678991D2A4772002568EC /* Build configuration list for PBXNativeTarget "DynamicLearningUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +580,7 @@
 				40A6789B1D2A4772002568EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
