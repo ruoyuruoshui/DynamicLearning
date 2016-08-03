@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--LockScreen-->
@@ -128,6 +130,26 @@
                                             <segue destination="Vdb-4c-BE2" kind="show" id="B0g-f4-nzp"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="84a-UZ-9q0" style="IBUITableViewCellStyleDefault" id="Z20-3j-4SL">
+                                        <rect key="frame" x="0.0" y="240" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z20-3j-4SL" id="FCJ-v3-jSs">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DynamicBall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="84a-UZ-9q0">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="psS-tt-CkA" kind="show" id="yxE-E3-liE"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -140,7 +162,78 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAS-Vv-xmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="-229"/>
+            <point key="canvasLocation" x="-442" y="-498"/>
+        </scene>
+        <!--Dynamic Ball-->
+        <scene sceneID="o2J-Oa-PMl">
+            <objects>
+                <viewController title="Dynamic Ball" id="psS-tt-CkA" customClass="LEDynamicBallViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fzW-7z-toi"/>
+                        <viewControllerLayoutGuide type="bottom" id="83J-hf-af8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I9e-7a-bHF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Yx-Im-Utw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ze7-nq-caf">
+                                <rect key="frame" x="290" y="190" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.55396945139999998" green="1" blue="0.80305772119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="0tx-WS-XXv"/>
+                                    <constraint firstAttribute="width" secondItem="ze7-nq-caf" secondAttribute="height" multiplier="1:1" id="T80-2v-UfE"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSY-5T-16b">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.55396945139999998" green="1" blue="0.80305772119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hSY-5T-16b" secondAttribute="height" multiplier="1:1" id="IDB-aT-OpQ"/>
+                                    <constraint firstAttribute="width" constant="20" id="KKO-pb-ffg"/>
+                                    <constraint firstAttribute="width" secondItem="hSY-5T-16b" secondAttribute="height" multiplier="1:1" id="TKn-Cy-BcR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TKn-Cy-BcR"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="H76-37-IZp">
+                                <rect key="frame" x="275" y="360" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="egV-kC-3fO"/>
+                                    <constraint firstAttribute="width" secondItem="H76-37-IZp" secondAttribute="height" multiplier="1:1" id="snZ-5s-Q0O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ze7-nq-caf" firstAttribute="centerY" secondItem="4Yx-Im-Utw" secondAttribute="centerY" constant="50" id="2NX-wE-byL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Yx-Im-Utw" secondAttribute="trailing" constant="-20" id="Jka-4a-AQR"/>
+                            <constraint firstItem="hSY-5T-16b" firstAttribute="top" secondItem="ze7-nq-caf" secondAttribute="bottom" constant="80" id="LqR-mv-40L"/>
+                            <constraint firstItem="4Yx-Im-Utw" firstAttribute="height" secondItem="I9e-7a-bHF" secondAttribute="height" multiplier="0.5" id="M6K-bw-eJC"/>
+                            <constraint firstItem="H76-37-IZp" firstAttribute="centerX" secondItem="I9e-7a-bHF" secondAttribute="centerX" id="gAV-Rb-vio"/>
+                            <constraint firstItem="ze7-nq-caf" firstAttribute="centerX" secondItem="I9e-7a-bHF" secondAttribute="centerX" id="h24-49-zAq"/>
+                            <constraint firstItem="4Yx-Im-Utw" firstAttribute="leading" secondItem="I9e-7a-bHF" secondAttribute="leadingMargin" constant="-20" id="lzT-22-zlc"/>
+                            <constraint firstItem="H76-37-IZp" firstAttribute="top" secondItem="hSY-5T-16b" secondAttribute="bottom" constant="50" id="ogD-C6-Iyn"/>
+                            <constraint firstItem="hSY-5T-16b" firstAttribute="centerX" secondItem="I9e-7a-bHF" secondAttribute="centerX" id="uOX-Zo-M1i"/>
+                            <constraint firstItem="4Yx-Im-Utw" firstAttribute="top" secondItem="fzW-7z-toi" secondAttribute="bottom" constant="-64" id="vAE-GJ-fDj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballView" destination="H76-37-IZp" id="eS2-Wl-IKc"/>
+                        <outlet property="bottomView" destination="hSY-5T-16b" id="cQN-8s-rbJ"/>
+                        <outlet property="panView" destination="4Yx-Im-Utw" id="Y5s-Kp-2dR"/>
+                        <outlet property="topView" destination="ze7-nq-caf" id="bgL-Zw-bPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ok0-Up-UD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="-451"/>
         </scene>
         <!--Drag View-->
         <scene sceneID="bPo-9L-iYk">
@@ -277,4 +370,7 @@
             <point key="canvasLocation" x="1350" y="997"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball" width="350" height="350"/>
+    </resources>
 </document>

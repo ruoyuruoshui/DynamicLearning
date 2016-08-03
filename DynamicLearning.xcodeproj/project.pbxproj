@@ -21,6 +21,7 @@
 		40A678AD1D2A5C71002568EC /* LETearOffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A678AC1D2A5C71002568EC /* LETearOffViewController.m */; };
 		40A678B01D2A6481002568EC /* LEDefaultBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A678AF1D2A6481002568EC /* LEDefaultBehavior.m */; };
 		40DD04471D5074EC0016A818 /* LELockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DD04461D5074EC0016A818 /* LELockViewController.m */; };
+		40DD044A1D5191C30016A818 /* LEDynamicBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DD04491D5191C30016A818 /* LEDynamicBallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		40A678AF1D2A6481002568EC /* LEDefaultBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDefaultBehavior.m; sourceTree = "<group>"; };
 		40DD04451D5074EC0016A818 /* LELockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LELockViewController.h; sourceTree = "<group>"; };
 		40DD04461D5074EC0016A818 /* LELockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LELockViewController.m; sourceTree = "<group>"; };
+		40DD04481D5191C30016A818 /* LEDynamicBallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDynamicBallViewController.h; sourceTree = "<group>"; };
+		40DD04491D5191C30016A818 /* LEDynamicBallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDynamicBallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				40A678AC1D2A5C71002568EC /* LETearOffViewController.m */,
 				40DD04451D5074EC0016A818 /* LELockViewController.h */,
 				40DD04461D5074EC0016A818 /* LELockViewController.m */,
+				40DD04481D5191C30016A818 /* LEDynamicBallViewController.h */,
+				40DD04491D5191C30016A818 /* LEDynamicBallViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				40A6786E1D2A4772002568EC /* AppDelegate.m in Sources */,
 				40A6786B1D2A4772002568EC /* main.m in Sources */,
 				40A678A21D2A4883002568EC /* LEDragViewController.m in Sources */,
+				40DD044A1D5191C30016A818 /* LEDynamicBallViewController.m in Sources */,
 				40A678B01D2A6481002568EC /* LEDefaultBehavior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
